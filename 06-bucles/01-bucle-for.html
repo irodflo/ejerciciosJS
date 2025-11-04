@@ -129,7 +129,46 @@
 // INICIO
 
 // Tu código aquí
+function sumarNumeros(n) {
+  let suma = 0;
+  for (let i = 1; i <= n; i++) {
+    suma += i;
+  }
+  return suma;
+}
 
+function contarPares(array) {
+  let contador = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      contador++;
+    }
+  }
+  return contador;
+}
+
+function multiplicarArray(array, multiplicador) {
+  let resultado = [];
+  for (let i = 0; i < array.length; i++) {
+    resultado.push(array[i] * multiplicador);
+  }
+  return resultado;
+}
+
+function crearPatron(n) {
+  let patron = "";
+  for (let i = 1; i <= n; i++) {
+    
+    for (let j = 1; j <= i; j++) {
+      patron += "*";
+    }
+    
+    if (i < n) {
+      patron += "\n";
+    }
+  }
+  return patron;
+}
 // FIN</textarea
     >
     <button onclick="ejecutarPruebas()">Ejecutar pruebas</button>

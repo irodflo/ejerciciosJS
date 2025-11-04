@@ -123,7 +123,21 @@
 // INICIO
 
 // Tu código aquí
+function obtenerPrimeroYUltimo(array) {
+  return [array[0], array[array.length - 1]];
+}
 
+function eliminarDuplicados(array) {
+  return [...new Set(array)];
+}
+
+function filtrarPorLongitud(array, longitud) {
+  return array.filter(str => str.length >= longitud);
+}
+
+function sumarArrays(array1, array2) {
+  return array1.map((v, i) => v + array2[i]);
+}
 // FIN</textarea
     >
     <button onclick="ejecutarPruebas()">Ejecutar pruebas</button>

@@ -129,6 +129,26 @@
 // INICIO
 
 // Tu código aquí
+let persona = {
+  nombre: "Iria",
+  edad: 38,
+  profesion: "Suboficial del ET",
+  hobbies: ["deporte", "diseño", "aprender JS"],
+  presentarse: function () {
+    return "Hola, me llamo " + this.nombre + ", tengo " + this.edad +
+           " años y soy " + this.profesion + ". Me gusta " +
+           this.hobbies.join(", ") + ".";
+  }
+};
+
+function agregarHobby(persona, hobby) {
+  persona.hobbies.push(hobby);
+  return persona;
+}
+
+function esMayorQue(persona1, persona2) {
+  return persona1.edad > persona2.edad;
+}
 
 // FIN</textarea
     >
